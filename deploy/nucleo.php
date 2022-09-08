@@ -21,7 +21,7 @@ class nucleo
 		$respuesta = mysql_query( $sql );
 	}
 	
-	function guardar_personas( $tipo_doc, $num_doc, $nombres, $apellidos, $rol, $genero )
+	function guardar_personas( $tipo_doc, $num_doc, $nombres, $apellidos, $rol, $genero, $telefono = null, $fecha_nacimiento = null )
 	{		
 		include("config.php"); //Se incluyen los parámetros a usar a través del archivo config.
 	
@@ -48,8 +48,11 @@ class nucleo
 			
 			if( $error == "" )
 			{
-				$sql  = " INSERT INTO tb_personas( num_doc, nombres, apellidos,cod_rol, cod_genero, fecha_registro, sn_mostrar, sn_contar, cod_tipo_doc ) ";
-				$sql .= " VALUES( $num_doc, '$nombres', '$apellidos', '$rol', '$genero', NOW(), 's', 's', '$tipo_doc' ) ";
+				//Al 07/09/2022 se coloca en este insert el cod_programa.
+				//Esto se iba a implementar para ciertos programas post-pandemia pero
+				//al final no se implementó.
+				$sql  = " INSERT INTO tb_personas( num_doc, nombres, apellidos,cod_rol, cod_genero, fecha_registro, sn_mostrar, sn_contar, cod_tipo_doc, cod_programa, fecha_nacimiento, telefono ) ";
+				$sql .= " VALUES( '$num_doc', '$nombres', '$apellidos', '$rol', '$genero', NOW(), 's', 's', '$tipo_doc', 1, '$fecha_nacimiento', '$telefono' ) ";
 				
 				//echo $sql;
 				

@@ -45,7 +45,7 @@ echo "<meta charset='UTF-8'>";
 						echo "<div class='col-xs-12 col-md-8 col-lg-8'>";
 								
 								$row.="<div class='row well'>";
-								$row.="<div class='col-xs-12 col-md-12 alert alert-info'><center><b>ENCUESTA REGISTRO SENA 2020 </b><center></div>";
+								$row.="<div class='col-xs-12 col-md-12 alert alert-info'><center><b>ENCUESTA REGISTRO SENA</b><center></div>";
 								$row.="</div>";
 								echo $row;
 

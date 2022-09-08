@@ -71,9 +71,14 @@
 				<br>
 				<li>Apellidos:</li><input class="form-control" type="text" name="apellidos">
 
+				<br>
+				<li>Fecha nacimiento:</li><input class="form-control" type="date" name="fecha_nacimiento">
 
 				<br>
-				<li>Rol:</li>
+				<li>Teléfono:</li><input class="form-control" type="text" name="telefono">
+
+				<br>
+				<li>Nivel de formación:</li>
 
 				<?= $obj_nucleo->retornar_lista_tabla( "cod_rol", "desc_rol", "tb_roles", "rol" ) ?>
 

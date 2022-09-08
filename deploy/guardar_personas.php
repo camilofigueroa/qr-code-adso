@@ -10,10 +10,16 @@
 	$apellidos		= $_POST['apellidos'];
 	$rol			= $_POST['rol'];
 	$genero			= $_POST['genero'];
+	$fecha_nacimiento			= $_POST['fecha_nacimiento'];
+	$telefono					= $_POST['telefono'];
 
 	$sn_registro_visitas = 0;
 
-	$respuesta = $obj_programa->guardar_personas( $tipo_doc, $num_doc, $nombres, $apellidos, $rol, $genero );
+	//Los campos fecha de nacimiento y teléfono se colocaron para exposena 2022.
+	//echo $tipo_doc." ".$num_doc." ".$nombres." ".$rol." ".$genero;
+	//echo $fecha_nacimiento." ".$telefono;
+
+	$respuesta = $obj_programa->guardar_personas( $tipo_doc, $num_doc, $nombres, $apellidos, $rol, $genero, $telefono, $fecha_nacimiento );
 
 	//echo "<center><a href='phpqrcode/index.php?data=".TRIM( $num_doc )."&size=8&level=H&tipo_doc=".$tipo_doc."'>Ir a imprimir</a>"; //20192211
 	//echo "<center><a href='frm_personas_.php'>Registrar más personas.</a>"; //20192211
