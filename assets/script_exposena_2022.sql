@@ -1,5 +1,7 @@
+SET SQL_SAFE_UPDATES = 0;
+
 show databases;
-use bd_reg_entrada_202210;
+use bd_reg_entrada_2024a;
 
 show tables;
 select * from tb_encuestas;

@@ -7,7 +7,13 @@ class nucleo
 	
 	public $obj_encuesta;	
 	
-	function nucleo ()
+	/*Se cambia la forma de hacer el constructor*/ 
+	/*function nucleo ()
+	{
+		$this->obj_encuesta = new Encuesta();
+	}*/
+
+	function __construct ()
 	{
 		$this->obj_encuesta = new Encuesta();
 	}

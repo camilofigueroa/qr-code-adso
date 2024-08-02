@@ -10,7 +10,7 @@
 	$servidor = "localhost";
 	$usuario = "root";
 	$clave = "";
-	$bd ="bd_reg_entrada_202210";  //PAra el registro de la entrada del Sena, sede Modelo.
+	$bd ="bd_reg_entrada_2024a";  //PAra el registro de la entrada del Sena, sede Modelo.
 	$encuesta = 2;
 	//$bd ="bd_ser";      #"bd_qr_code_sena";
 	/* �Por qu� est�n as�?, porque cada persona dependiendo de cada equipo y versi�n de xampp puede usar un tipo diferente de
